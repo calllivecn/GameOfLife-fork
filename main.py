@@ -37,7 +37,8 @@ except ImportError:
     qdark_present = False
 
 if __name__ == '__main__':
-    gol = GameOfLife()  # The model
+    #gol = GameOfLife()  # The model
+    gol = GameOfLife(400, 600)  # The model
 
     timer = GolLoop()  # The game loop
     timer.timeout.connect(gol.next)

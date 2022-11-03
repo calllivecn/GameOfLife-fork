@@ -76,7 +76,7 @@ class GameOfLife:
         self.y = y
         self.mat = np.zeros((self.x, self.y), dtype=np.uint8)
         if self.mode == 'random':  # redo it better
-            rand_m = np.random.randn(self.x, self.y) - 0.5  # less white cells than black voids
+            rand_m = np.random.randn(self.x, self.y) - 0.8  # less white cells than black voids
             indexes_p = rand_m > 0
             self.mat[indexes_p] = PIXEL_MAX
         self.initial_state = np.copy(self.mat)

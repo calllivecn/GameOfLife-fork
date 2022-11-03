@@ -188,7 +188,7 @@ class MainWindow(QWidget):
         if text == "Empty":
             self.gol.reinitialize('empty')
         elif text == "Random":
-            self.gol.reinitialize('random')
+            self.gol.reinitialize('random', 400, 600)
         elif text != "- Custom pattern -":
             last = self.menu.count() - 1
             if self.menu.itemText(last) == "- Custom pattern -":
